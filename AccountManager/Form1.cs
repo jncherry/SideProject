@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace AccountManager
 {
-    public partial class Form1 : Form
+    public partial class MainApp : Form
     {
         double Balance;
         double bal;
@@ -20,7 +20,7 @@ namespace AccountManager
         DataRow newCheckingRow;
         
 
-        public Form1()
+        public MainApp()
         {
             InitializeComponent();
             DateTimePicker dtpDate = new DateTimePicker();

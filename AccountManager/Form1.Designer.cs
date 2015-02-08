@@ -1,6 +1,6 @@
 ﻿namespace AccountManager
 {
-    partial class Form1
+    partial class MainApp
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,14 +54,6 @@
             this.txtTransDesc = new System.Windows.Forms.TextBox();
             this.lblTransDesc = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.paymentAmountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.depositAmountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.balanceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clearedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.checkingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dBCheckingDataSet = new AccountManager.DBCheckingDataSet();
             this.checkingTableAdapter = new AccountManager.DBCheckingDataSetTableAdapters.CheckingTableAdapter();
@@ -64,6 +64,14 @@
             this.cbCleared = new System.Windows.Forms.CheckBox();
             this.lblTransStatus = new System.Windows.Forms.Label();
             this.txtTransAmt = new System.Windows.Forms.TextBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paymentAmountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.depositAmountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.balanceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clearedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.gbTransType.SuspendLayout();
             this.pnlBalance.SuspendLayout();
@@ -78,7 +86,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1269, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1147, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -250,60 +258,12 @@
             this.balanceDataGridViewTextBoxColumn,
             this.clearedDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.checkingBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(453, 44);
+            this.dataGridView1.Location = new System.Drawing.Point(457, 44);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(804, 306);
+            this.dataGridView1.Size = new System.Drawing.Size(678, 516);
             this.dataGridView1.TabIndex = 12;
             this.dataGridView1.TabStop = false;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "ID";
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
-            // 
-            // codeDataGridViewTextBoxColumn
-            // 
-            this.codeDataGridViewTextBoxColumn.DataPropertyName = "Code";
-            this.codeDataGridViewTextBoxColumn.HeaderText = "Code";
-            this.codeDataGridViewTextBoxColumn.Name = "codeDataGridViewTextBoxColumn";
-            // 
-            // dateDataGridViewTextBoxColumn
-            // 
-            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
-            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
-            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
-            // 
-            // descriptionDataGridViewTextBoxColumn
-            // 
-            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
-            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
-            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
-            // 
-            // paymentAmountDataGridViewTextBoxColumn
-            // 
-            this.paymentAmountDataGridViewTextBoxColumn.DataPropertyName = "Payment Amount";
-            this.paymentAmountDataGridViewTextBoxColumn.HeaderText = "Payment Amount";
-            this.paymentAmountDataGridViewTextBoxColumn.Name = "paymentAmountDataGridViewTextBoxColumn";
-            // 
-            // depositAmountDataGridViewTextBoxColumn
-            // 
-            this.depositAmountDataGridViewTextBoxColumn.DataPropertyName = "Deposit Amount";
-            this.depositAmountDataGridViewTextBoxColumn.HeaderText = "Deposit Amount";
-            this.depositAmountDataGridViewTextBoxColumn.Name = "depositAmountDataGridViewTextBoxColumn";
-            // 
-            // balanceDataGridViewTextBoxColumn
-            // 
-            this.balanceDataGridViewTextBoxColumn.DataPropertyName = "Balance";
-            this.balanceDataGridViewTextBoxColumn.HeaderText = "Balance";
-            this.balanceDataGridViewTextBoxColumn.Name = "balanceDataGridViewTextBoxColumn";
-            // 
-            // clearedDataGridViewTextBoxColumn
-            // 
-            this.clearedDataGridViewTextBoxColumn.DataPropertyName = "Cleared";
-            this.clearedDataGridViewTextBoxColumn.HeaderText = "Cleared";
-            this.clearedDataGridViewTextBoxColumn.Name = "clearedDataGridViewTextBoxColumn";
             // 
             // checkingBindingSource
             // 
@@ -376,11 +336,89 @@
             this.txtTransAmt.Size = new System.Drawing.Size(211, 20);
             this.txtTransAmt.TabIndex = 0;
             // 
-            // Form1
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "ID";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Column1.HeaderText = "ID";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 53;
+            // 
+            // codeDataGridViewTextBoxColumn
+            // 
+            this.codeDataGridViewTextBoxColumn.DataPropertyName = "Code";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.codeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            this.codeDataGridViewTextBoxColumn.HeaderText = "Code";
+            this.codeDataGridViewTextBoxColumn.Name = "codeDataGridViewTextBoxColumn";
+            this.codeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.codeDataGridViewTextBoxColumn.Width = 75;
+            // 
+            // dateDataGridViewTextBoxColumn
+            // 
+            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Format = "d";
+            dataGridViewCellStyle3.NullValue = null;
+            this.dateDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
+            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
+            this.dateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dateDataGridViewTextBoxColumn.Width = 75;
+            // 
+            // descriptionDataGridViewTextBoxColumn
+            // 
+            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.descriptionDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
+            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
+            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
+            this.descriptionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // paymentAmountDataGridViewTextBoxColumn
+            // 
+            this.paymentAmountDataGridViewTextBoxColumn.DataPropertyName = "Payment Amount";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.paymentAmountDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
+            this.paymentAmountDataGridViewTextBoxColumn.HeaderText = "Payment Amount";
+            this.paymentAmountDataGridViewTextBoxColumn.Name = "paymentAmountDataGridViewTextBoxColumn";
+            this.paymentAmountDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // depositAmountDataGridViewTextBoxColumn
+            // 
+            this.depositAmountDataGridViewTextBoxColumn.DataPropertyName = "Deposit Amount";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.depositAmountDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
+            this.depositAmountDataGridViewTextBoxColumn.HeaderText = "Deposit Amount";
+            this.depositAmountDataGridViewTextBoxColumn.Name = "depositAmountDataGridViewTextBoxColumn";
+            this.depositAmountDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // balanceDataGridViewTextBoxColumn
+            // 
+            this.balanceDataGridViewTextBoxColumn.DataPropertyName = "Balance";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.balanceDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle7;
+            this.balanceDataGridViewTextBoxColumn.HeaderText = "Balance";
+            this.balanceDataGridViewTextBoxColumn.Name = "balanceDataGridViewTextBoxColumn";
+            this.balanceDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // clearedDataGridViewTextBoxColumn
+            // 
+            this.clearedDataGridViewTextBoxColumn.DataPropertyName = "Cleared";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.clearedDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle8;
+            this.clearedDataGridViewTextBoxColumn.HeaderText = "Cleared";
+            this.clearedDataGridViewTextBoxColumn.Name = "clearedDataGridViewTextBoxColumn";
+            this.clearedDataGridViewTextBoxColumn.ReadOnly = true;
+            this.clearedDataGridViewTextBoxColumn.Width = 55;
+            // 
+            // MainApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1269, 362);
+            this.ClientSize = new System.Drawing.Size(1147, 572);
             this.Controls.Add(this.txtTransAmt);
             this.Controls.Add(this.lblTransStatus);
             this.Controls.Add(this.cbCleared);
@@ -398,8 +436,12 @@
             this.Controls.Add(this.gbTransType);
             this.Controls.Add(this.lblTransAmt);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.MaximumSize = new System.Drawing.Size(1167, 615);
+            this.MinimumSize = new System.Drawing.Size(1167, 615);
+            this.Name = "MainApp";
+            this.ShowIcon = false;
             this.Text = "Account Manager";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -444,6 +486,7 @@
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.CheckBox cbCleared;
         private System.Windows.Forms.Label lblTransStatus;
+        private System.Windows.Forms.TextBox txtTransAmt;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn codeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
@@ -452,7 +495,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn depositAmountDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn balanceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn clearedDataGridViewTextBoxColumn;
-        private System.Windows.Forms.TextBox txtTransAmt;
     }
 }
 
